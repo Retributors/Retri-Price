@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сайт с ценами на услуги</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <button class="nick-btn" onclick="showPanel('velory')">Velory</button>
+    <button class="nick-btn" onclick="showPanel('retributor')">Retributor</button>
+    
+    <div id="panel-velory" class="panel">
+      <button onclick="showPrice('Dox', 5)">Dox</button>
+      <button onclick="showPrice('Swat', 6)">Swat</button>
+      <button onclick="showPrice('Def', '2$ в неделю')">Def</button>
+    </div>
+    
+    <div id="panel-retributor" class="panel">
+      <button onclick="showPrice('Dox', 5)">Dox</button>
+      <button onclick="showPrice('Swat', 6)">Swat</button>
+      <button onclick="showPrice('Def', '2$ в неделю')">Def</button>
+    </div>
+
+    <div id="price-display" class="price-display"></div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
